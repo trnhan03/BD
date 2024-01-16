@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dữ liệu lớn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700;800&family=Noto+Sans:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">    
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        DỰ ĐOÁN LƯỢNG MƯA
+    </h1>
+    <!-- <div>
+        <h2>Thành viên:</h2>
+        <p>22222222-Nguyễn Văn A</p>
+        <p>22222222-Nguyễn Văn A</p>
+        <p>22222222-Nguyễn Văn A</p>    
+    </div> -->
+    <div id="content" >
+        <div class="card">
+            <img class="icon" src="./src/luongmua.png" width="200" height="200" alt="Italian Trulli">
+            <div id="amount">
+                500mm
+            </div>
+        </div>
+    
+        <div class="card" >
+            <!-- <div class="card" onmousedown="clickcard(this)" onmouseup="outclick(this)"></div> -->
+            <img src="./src/nhietdo.png" alt="Italian Trulli">
+            <div id="amount">
+                37&deg;C
+            </div>
+        </div>
+        <div class="card" >
+            <img src="./src/doam.png" alt="Italian Trulli">
+            <div id="amount">
+                100%
+            </div>
+        </div>
+    </div>
+    <!-- <div id="forecast">
+        Dự đoán: mưa
+    </div> -->
+    <div id="btn">
+        <button onmousemove="hoverbtn(event,this)" onmouseout="mouseleave(this)" onclick="clickbtn(this)">Cập nhật</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
