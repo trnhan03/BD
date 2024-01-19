@@ -16,9 +16,16 @@ const mouseleave=(n)=>{
     color:#FAE7F3;`
 
 }
-const clickbtn=(a)=>{
+const clickbtn= async(a)=>{
     // a.style=`background-color: #11009E;border: 5;
     // border-color:#1D2B53 ;`
+    let result=await fetch('http://127.0.0.1:3000/')
+    .then(res=>res.json())
+    .catch(err=>console.log(err))
+    console.log(result)
+    document.getElementById('amount_of_rain').innerHTML=result[0].amount_of_rain+'mm'
+    document.getElementById('temperature').innerHTML=result[0].temperature+'&deg;C'
+    document.getElementById('humidity').innerHTML=result[0].humidity
 }
 const clickcard=(ele) =>{
     ele.style=`
@@ -32,6 +39,7 @@ const clickcard=(ele) =>{
     padding: 10px;
     background-color:   white ;
     `
+
 }
 const outclick=(ele)=>{
     ele.style=`
@@ -46,3 +54,13 @@ const outclick=(ele)=>{
     background-color:   white ;
     `
 }
+
+window.onload = async function() {
+    let result=await fetch('http://127.0.0.1:3000/')
+    .then(res=>res.json())
+    .catch(err=>console.log(err))
+    console.log(result)
+    document.getElementById('amount_of_rain').innerHTML=result[0].amount_of_rain+'mm'
+    document.getElementById('temperature').innerHTML=result[0].temperature+'&deg;C'
+    document.getElementById('humidity').innerHTML=result[0].humidity
+  };

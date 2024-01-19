@@ -25,7 +25,17 @@ div>p{
     padding-left: 100px;
 
 }
-#amount  {
+#humidity  {
+    font-size: 60px;
+    font-weight: 900;
+    display: inline;
+}
+#temperature  {
+    font-size: 60px;
+    font-weight: 900;
+    display: inline;
+}
+#amount_of_rain  {
     font-size: 60px;
     font-weight: 900;
     display: inline;
